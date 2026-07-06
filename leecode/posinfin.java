@@ -1,5 +1,5 @@
 // We will have to findan element inside an infinite array
-// (infinite=we dont know the size of the array and we cant use leangth())
+// (infinite=we dont know the size of the array and we cant use length())
 public class posinfin {
     public static void main(String[] args) {
         int[] exp={10,20,34,54,65,76,87,89,91,95,97,100};
