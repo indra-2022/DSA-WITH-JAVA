@@ -24,7 +24,10 @@ class Student{
     double marks;
 
    Student(){
-
+    // This is the deafault constructer,also here worked as a constructer overloading
+    //If we create a constructer manually,we also have to create it, otherwise we
+    // have to follow the exect same parameter pattern or it will give an error
+    // If no manual constructer,no need to create it manually,its created by JVM Automatically
    }
     Student (int roll,String name,double number){
         this.roll=roll;

@@ -1,9 +1,15 @@
-# Ignore Java compiled files
+# Java compiled files
 *.class
+
+# Build folders
+out/
+bin/
+target/
 
 # IntelliJ IDEA
 .idea/
 *.iml
 
-# Build output
-out/
+# OS files
+.DS_Store
+Thumbs.db
