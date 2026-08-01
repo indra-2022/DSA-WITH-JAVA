@@ -7,4 +7,4 @@ public static void main(String[] args) {
 }
 }
 // Here see that we are inheriting multiple classes like Engine and Media
-//in class [Car] using implements keyword 
+//in class [Car] using implements keyword.
