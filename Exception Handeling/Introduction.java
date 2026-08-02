@@ -1,5 +1,4 @@
 public class Introduction {
-    
    public static void main(String[] args) {
     try{
     int a=10;
