@@ -7,4 +7,7 @@ public class intro {
         }
         
     }
+    /* Java arrays are not guaranteed to be stored in contiguous memoryn Why?
+    Because Java never gives direct access to memory addresses.
+    The JVM is free to manage memory however it wants. */
 }
