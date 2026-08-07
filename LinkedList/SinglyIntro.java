@@ -13,18 +13,17 @@ public class SinglyIntro {
   public SinglyIntro() {
     this.size = 0;
   }
-  private class Node { // This class is specially creating the node,bcs here we are writing everything 
-    // From scratch 
+  private class Node { 
     private int value;
     private Node next;
     public Node(int value) {
       this.value = value;
     } 
-    public Node(int value, Node next) {
-      this.value = value;
-      this.next = next;
-    }
-    
+
+    // public Node(int value, Node next) {
+    //   this.value = value;
+    //   this.next = next;
+    // }
   }
 
                       // Function to add data at first position
@@ -77,6 +76,19 @@ if (index==size) {
                     // Delete the first index data
 public void DeleteFirst(){
   head=head.next;
+}
+                   // Delete last Indext Data
+public void DeleteLast(){
+  if (head== null) {
+    return;
+  }
+  Node temp = head;
+   for(int i=0;i<size-2;i++){
+      temp=temp.next;
+   }
+   tail=temp;
+   tail.next=null;
+   size--;
 }
 
                 // Function to display data
