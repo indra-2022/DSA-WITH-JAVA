@@ -13,17 +13,67 @@ public class SinglyIntro {
   public SinglyIntro() {
     this.size = 0;
   }
+  private class Node { // This class is specially creating the node,bcs here we are writing everything 
+    // From scratch 
+    private int value;
+    private Node next;
+    public Node(int value) {
+      this.value = value;
+    } 
+    public Node(int value, Node next) {
+      this.value = value;
+      this.next = next;
+    }
+    
+  }
 
-public void InsertfIRST(int val){ // Function to add data at first position
+                      // Function to add data at first position
+public void InsertFirst(int val){ 
   Node node = new Node(val);
   node.next=head;
   head=node;
   if (tail==null) {
       tail=head;
   }
+  size++;
 }
 
-public void display(){ // Function to display data
+                    //Function to add node at last position
+public void InsertLast(int val){
+  if(tail==null){
+    InsertFirst(val); 
+    return; // Check if the list is emepty then just call the InsertFirst method
+  }
+  Node node = new Node(val);
+  tail.next= node; 
+  tail= node;
+  size++;
+}
+
+                // Function to Add Data at any index
+public void InsertAtIndex(int val,int index){
+if (index==0) {
+  InsertFirst(val);
+  return;
+}
+
+if (index==size) {
+  InsertLast(val);
+  return;
+}
+
+ Node temp = head;
+ for(int i=0;i<index-1;i++){
+    temp=temp.next;
+ }
+  Node node = new Node(val);
+  node.next=temp.next;
+  temp.next=node;
+  size++;
+}
+
+                // Function to display data
+public void display(){ 
   Node temp = head;
   while (temp!= null) {
     System.out.println(temp.value);
@@ -31,15 +81,10 @@ public void display(){ // Function to display data
   }
 }
 
-  private class Node {
-    private int value;
-    public Node(int value) {
-      this.value = value;
-    }
-    public Node(int value, Node next) {
-      this.value = value;
-      this.next = next;
-    }
-    private Node next;
-  }
+                       //Function to get the size
+public void GetSize(){
+  System.out.println("The size of the LinkedList is--->"+ size);
+}
+
+  
 }
