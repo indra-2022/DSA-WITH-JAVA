@@ -72,13 +72,24 @@ if (index==size) {
   size++;
 }
 
+                    // DELETATION PART
+
+                    // Delete the first index data
+public void DeleteFirst(){
+  head=head.next;
+}
+
                 // Function to display data
 public void display(){ 
   Node temp = head;
   while (temp!= null) {
-    System.out.println(temp.value);
+    System.out.print(temp.value+"->");
     temp=temp.next;
+    if (temp==null) {
+      System.out.print("End");
+    }
   }
+  System.out.println();
 }
 
                        //Function to get the size
