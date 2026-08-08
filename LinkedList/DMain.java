@@ -7,5 +7,7 @@ public static void main(String[] args) {
     list.DInsertFirst(10);
     list.DInsertLast(30);
     list.display();
+    list.DdeleteIndex(2);
+    list.display();
 }
 }
