@@ -69,4 +69,16 @@ if (index==size) {
   node.prev=temp;
   size++;
 }
+
+public void display(){ 
+  Node temp = head;
+  while (temp!= null) {
+    System.out.print(temp.value+"->");
+    temp=temp.next;
+    if (temp==null) {
+      System.out.print("End");
+    }
+  }
+  System.out.println();
+}
 }
