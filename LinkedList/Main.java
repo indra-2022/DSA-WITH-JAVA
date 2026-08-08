@@ -13,11 +13,15 @@ public class Main {
           list.InsertLast(80);
           list.InsertLast(90);  // Using Self define method
           list.InsertAtIndex(85, 2);
-        //   list.display();
-        //   list.DeleteFirst();
+        //list.display();
+        //list.DeleteFirst();
+        //list.display();
+        // list.DeleteLast();
           list.display();
-          list.DeleteLast();
+          list.GetSize();
+          list.DeleteIndex(3);
           list.display();
+          list.GetSize();
          //LinkedList<Integer> list = new LinkedList<>();
         // list.add(90); -> [Using Internal Implementations]
         // System.out.println(list.get(0));

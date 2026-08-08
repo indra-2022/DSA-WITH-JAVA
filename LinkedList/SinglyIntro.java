@@ -90,6 +90,17 @@ public void DeleteLast(){
    tail.next=null;
    size--;
 }
+                // Delete at any index
+public void DeleteIndex(int index){
+  Node temp = head;
+   for(int i=0;i<index-2;i++){
+      temp=temp.next; //-> Pointing to previous element of the index
+   }
+   Node ex = temp.next; // Pointing to index
+   temp.next=ex.next;
+   size--;
+   System.out.println(ex.value+"<-Is deleted");
+}
 
                 // Function to display data
 public void display(){ 
