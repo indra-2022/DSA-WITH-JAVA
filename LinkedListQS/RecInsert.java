@@ -1,22 +1,6 @@
 // Rescursive inserion in an LinkedList
 package LinkedListQS;
-
-public class RecInsert{
-  private Node head;
-  private Node tail;
-  private int size;
-
-  public RecInsert() {
-    this.size = 0;
-}
-
-  private class Node { 
-    private int value;
-    private Node next;
-    public Node(int value) {
-      this.value = value;
-    } 
-}
+public class RecInsert extends NodeCreation{
 
 public void insert(int val, int index) {
     head = insert(val, index, head);
