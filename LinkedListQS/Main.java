@@ -13,12 +13,14 @@ public class Main {
         // list2.InsertFirst(70);
         // list2.display();
         // MergeSorted.Merge(list1,list2);
-        Middle obj = new Middle();
-        obj.InsertFirst(10);
-        obj.InsertFirst(90);
-        obj.InsertFirst(80);
-        obj.InsertFirst(70);
-        obj.display();
-        obj.GetMiddle();
+
+
+        // Middle obj = new Middle();
+        // obj.InsertFirst(10);
+        // obj.InsertFirst(90);
+        // obj.InsertFirst(80); UNCOMMENT TO GET MIDDLE OF LIST
+        // obj.InsertFirst(70);
+        // obj.display();
+        // obj.GetMiddle();
     }
 }
