@@ -3,13 +3,13 @@ package LinkedListQS;
     // https://leetcode.com/problems/linked-list-cycle/description/
 public class LinkedListCycle extends NodeCreation {
     public boolean IsCycle(){
-    Node first = head;
+    Node fast = head;
     Node slow = head;
-    while(first!=null&&first.next!=null)
+    while(fast!=null&&fast.next!=null)
     {
-        first = first.next.next;
+        fast = fast.next.next;
         slow = slow.next;
-        if (first == slow) {
+        if (fast == slow) {
             return true;
         }
     }return false;
@@ -32,12 +32,12 @@ public class LinkedListCycle extends NodeCreation {
 //  
 // public class Solution {
 //     public boolean hasCycle(ListNode head) {
-//         ListNode first = head;
+//         ListNode fast = head;
 //         ListNode slow = head;
-//         while(first != null && first.next != null){
-//             first=first.next.next;
+//         while(fast != null && fast.next != null){
+//             fast=fast.next.next;
 //             slow=slow.next;
-//             if(first==slow){
+//             if(fast==slow){
 //                 return true;
 //             }
 //         }
