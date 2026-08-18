@@ -1,6 +1,8 @@
 public class permutation {
+    static int counter=0;
     public static void main(String[] args) {
-        perm("","abc");
+        perm("","RGB");
+        System.out.println(counter);
     }
     static void perm(String p,String up){
         if (up.isEmpty()) {
