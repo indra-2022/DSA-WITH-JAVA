@@ -15,5 +15,5 @@ public class IntroductionToStack {
       //The pop method internally returns ṭhe data its deleted
       //  so we can just print the data using sout
       System.out.println(stack.toString());
-   }
+   }                  
 }
