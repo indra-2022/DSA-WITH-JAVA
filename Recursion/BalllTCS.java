@@ -1,6 +1,6 @@
 public class BalllTCS {
     public static void main(String[] args) {
-        System.out.println(countWays(1,1,1,' '));
+        System.out.println(countWays(4,2,2,' '));
     }
     static int countWays(int g, int y, int r, char prev) {
 
@@ -10,18 +10,17 @@ public class BalllTCS {
     }
 
     int count = 0;
-
-    // Place Green
+      //check if green balles are availval,and perform task
     if (g > 0 && prev != 'G') {
         count += countWays(g - 1, y, r, 'G');
     }
 
-    // Place Yellow
+      //check if yellow balles are availval,and perform task
     if (y > 0 && prev != 'Y') {
         count += countWays(g, y - 1, r, 'Y');
     }
 
-    // Place Red
+      //check if red balles are availval,and perform task
     if (r > 0 && prev != 'R') {
         count += countWays(g, y, r - 1, 'R');
     }
