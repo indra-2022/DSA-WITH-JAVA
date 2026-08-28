@@ -44,4 +44,17 @@ public class TreeIntro {
             
         }
     }
+      public void display() {
+    display(this.root, "");
+  }
+//Display Function 
+  private void display(Node node, String indent) {
+    if (node == null) {
+      return;
+    }
+    System.out.println(indent + node.value);
+    display(node.left, indent + "\t");
+    display(node.Right, indent + "\t");
+  }
+
 }
