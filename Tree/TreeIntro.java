@@ -56,5 +56,28 @@ public class TreeIntro {
     display(node.left, indent + "\t");
     display(node.Right, indent + "\t");
   }
+   
 
+// This is to display with good looks
+   public void ADisplayDisplay() {
+    ADisplayDisplay(root, 0);
+  }
+
+  private void ADisplayDisplay(Node node, int level) {
+    if (node == null) {
+      return;
+    }
+
+    ADisplayDisplay(node.Right, level + 1);
+
+    if (level != 0) {
+      for (int i = 0; i < level - 1; i++) {
+        System.out.print("|\t\t");
+      }
+      System.out.println("|------->" + node.value);
+    } else {
+      System.out.println(node.value);
+    }
+    ADisplayDisplay(node.left, level + 1);
+  }
 }
