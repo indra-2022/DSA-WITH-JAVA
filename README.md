@@ -30,8 +30,8 @@ This repository is continuously growing, and new topics/problems are being added
 * Linked List
 * HashMap & HashSet
 * Trees
-* Graphs
-* Dynamic Programming
+* LeetCode
+* CompanyWise Questions
 * Sliding Window
 * Two Pointer Technique
 
@@ -60,8 +60,8 @@ DSA-Java/
 │── Queue/
 │── LinkedList/
 │── Trees/
-│── Graphs/
-│── DynamicProgramming/
+│── HashMap/
+│── Questions/Leetcode
 │── README.md
 ```
 
@@ -92,6 +92,11 @@ Software Engineering & Data Science Enthusiast
 
 ---
 
-## ⭐ Support
+## ⭐ Conclusion
+This Repo is completely based on My Journey of DSA with Java.
+This Repo is not Created using any AI for ans and code,all of those logics are my own [Some README might be created using AI].
+I dont belive in VIBE CODEING, so dont judge me like a vibe coder, even if u, IDC.
 
-If you found this repository helpful, consider giving it a ⭐ on GitHub.
+
+
+
