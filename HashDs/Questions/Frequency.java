@@ -9,6 +9,5 @@ public class Frequency {
      for(String fruit : fruits){
            map.put(fruit, map.getOrDefault(fruit, 0)+1);
      }
-     System.out.println(map);
-   }
+     System.out.println(map); }
 }
